@@ -1,0 +1,73 @@
+#name,
+#mail,
+#mess,
+#sub,
+#delivert,
+#date,
+#btg {
+    color: red;
+}
+
+td {
+    width: 100%;
+    float: left;
+}
+
+#yourname,
+#message1,
+#message2,
+#deliverdate,
+#deliverto,
+#email,
+#subject,
+#select {
+    width: 300px;
+    border: 1px solid blue;
+}
+
+#message1 {
+    height: 120px;
+}
+
+#yourname,
+#message2,
+#deliverdate,
+#email,
+#subject,
+#select {
+    height: 28px;
+}
+
+#deliverto {
+    height: 120px;
+}
+
+#select {
+    width: 306px;
+    border: 1px solid blue;
+}
+
+.selectb {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#button {
+    width: 122px;
+    height: 35px;
+    background: red;
+    color: yellow;
+}
+
+table tr {
+    height: 40px;
+}
+
+table {
+    width: 100%;
+}
+
+main {
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 0, 149);
+}

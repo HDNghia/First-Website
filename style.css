@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+p:first-child {
+    font-style: italic;
+    text-decoration: underline;
+    color: #e17055;
+}
+
+header {
+    height: 55px;
+}
+
+.menu li>.sub-menu {
+    display: none;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+}
+
+button {
+    display: none;
+}
+
+.mynav li:hover {
+    border-bottom: 1px solid black;
+}
+
+.banner {
+    width: 100%;
+    background: url('https://cdn.mycreativeshop.com/images/templates/19581/gym-banner-template-35329-flat1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 900px;
+    background: -webkit-linear-gradient(rgba(187, 205, 240, 0.9), rgba(241, 189, 189, 0.9));
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nghia's blog</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Nghia's gym</h1>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light bg-light mynav">
+            <a class="navbar-brand">MENU</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Bài tập</a>
+                        <ul class="navbar-nav sub-menu">
+                            <li class="nav-item"><a class="nav-link" href="details-1.html">Cơ tay</a></li>
+                            <li class="nav-item"><a class="nav-link" href="details-2.html">Cơ ngực</a></li>
+                            <li class="nav-item"><a class="nav-link" href="details-3.html">Cơ lưng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Liên lạc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="order.html" class="nav-link">Đặt hàng</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <span class="ct">Contact me</span>
+        <hr>
+        <form class="contact">
+            <table>
+                <tr id="yourname1">
+                    <td>Your name</td>
+                    <td><input type="text" name="yourname" id="yourname" placeholder="viết tên bạn vào đây" maxlength="100">
+                        <br/><span id="name"></span>
+                    </td>
+                </tr>
+                <tr class="email1">
+                    <td>Your email</td>
+                    <td><input type="email" name="email" id="email" placeholder="Nhập email của bạn vào đây" maxlength="100">
+                        <br/><span id="mail"></span>
+                    </td>
+                </tr>
+                <tr class="sj">
+                    <td>Subject</td>
+                    <td><input type="text" name="subject" id="subject" placeholder="Nhập tiêu đề" minlength="50" maxlength="250">
+                        <br/><span id="sub"></span>
+                    </td>
+                </tr>
+                <tr class="mg">
+                    <td>Message</td>
+                    <td> <textarea name="message" id="message1" maxlength="500"></textarea>
+                        <br/><span id="mess"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" id="button" value="Send message" onclick="send()">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </main>
+    <footer>
+        <hr /> Ⓒ 2022 by Nghia's gym
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

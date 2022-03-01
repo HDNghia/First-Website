@@ -1,0 +1,243 @@
+/* mobile */
+
+@media screen and (max-width: 767px) {
+    #select,
+    #yourname,
+    #message2,
+    #deliverdate,
+    #deliverto,
+    #email,
+    #subject,
+    #message1 {
+        width: 99%;
+        height: 30px;
+    }
+    form,
+    section {
+        margin-left: 4px;
+    }
+    td,
+    footer {
+        font-size: 21px;
+    }
+    #message1 {
+        height: 150px;
+    }
+    #yourname1,
+    #baitapg,
+    .mg,
+    .icl,
+    .dd,
+    .dt,
+    #cal,
+    .email1,
+    .sj {
+        height: 70px;
+    }
+    .ct,
+    .od {
+        font-size: 32px;
+    }
+    .menu li:hover {
+        background: rgb(32, 164, 204);
+    }
+    .menu li {
+        text-align: center;
+    }
+    button {
+        display: block;
+    }
+    img {
+        width: 100%;
+    }
+    .banner {
+        height: 220px;
+        position: relative;
+    }
+    h1 {
+        width: 100%;
+        position: absolute;
+        top: 90px;
+    }
+    .imgab {
+        height: 500px;
+    }
+}
+
+
+/* tablet */
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    #select,
+    #yourname,
+    #message2,
+    #deliverdate,
+    #deliverto,
+    #email,
+    #subject,
+    #message1 {
+        width: 99%;
+        height: 30px;
+    }
+    .ct,
+    .od,
+    .contact,
+    .order {
+        margin-left: 5%;
+    }
+    section {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    form {
+        max-width: 88%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+    }
+    td,
+    footer {
+        font-size: 21px;
+    }
+    #message1 {
+        height: 150px;
+    }
+    #yourname1,
+    #baitapg,
+    .mg,
+    .icl,
+    .dd,
+    .dt,
+    #cal,
+    .email1,
+    .sj {
+        height: 70px;
+    }
+    .ct,
+    .od {
+        font-size: 32px;
+    }
+    #navbarMenu {
+        display: block;
+    }
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-xl .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-xl .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    .banner {
+        height: 281px;
+        position: relative;
+    }
+    h1 {
+        width: 100%;
+        position: absolute;
+        top: 121px;
+    }
+    .imgab {
+        height: 600px;
+    }
+}
+
+@media only screen and (min-width:993px) {
+    .contact,
+    .ct,
+    .order,
+    .od {
+        margin-left: 18%;
+    }
+    #select,
+    #yourname,
+    #message2,
+    #deliverdate,
+    #deliverto,
+    #email,
+    #subject,
+    #message1 {
+        width: 90%;
+        height: 30px;
+    }
+    td,
+    footer {
+        font-size: 21px;
+    }
+    section {
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    img {
+        width: 100%;
+    }
+    form {
+        max-width: 77%;
+        margin: 0 auto;
+    }
+    #message1 {
+        height: 150px;
+    }
+    #yourname1,
+    #baitapg,
+    .mg,
+    .icl,
+    .dt,
+    .dd,
+    #cal,
+    .email1,
+    .sj {
+        height: 70px;
+    }
+    .ct,
+    .od {
+        font-size: 32px;
+    }
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-xl .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-xl .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    .banner {
+        height: 300px;
+        position: relative;
+    }
+    h1 {
+        height: 68px;
+        width: 100%;
+        position: absolute;
+        top: 117px;
+        padding-top: 9px;
+    }
+    .tt section {
+        width: 31%;
+        float: left;
+        margin-left: 2%;
+        border: 1px solid rgb(148, 136, 136);
+    }
+    .tt section img {
+        width: 100%;
+        height: 245px;
+    }
+    .tt section:nth-child(2) img,
+    .tt section:nth-child(3) img {
+        height: 274px;
+    }
+    .tt {
+        overflow: hidden;
+    }
+    .imgab {
+        height: 800px;
+    }
+}

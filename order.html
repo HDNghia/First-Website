@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nghia's blog</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Nghia's gym</h1>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light bg-light mynav">
+            <a class="navbar-brand">MENU</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Bài tập</a>
+                        <ul class="navbar-nav sub-menu">
+                            <li class="nav-item"><a class="nav-link" href="details-1.html">Cơ tay</a></li>
+                            <li class="nav-item"><a class="nav-link" href="details-2.html">Cơ ngực</a></li>
+                            <li class="nav-item"><a class="nav-link" href="details-3.html">Cơ lưng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Liên lạc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="order.html" class="nav-link">Đặt hàng</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <span class="od">Order now</span>
+        <hr>
+        <form class="order">
+            <table>
+                <tr id="baitapg">
+                    <td>Bài tập gym</td>
+                    <td><select name="select" id="select" required>
+                        <option class="selectb" value="select book">- - - -Select book- - - -</option>
+                        <option>Bài tập tay</option>
+                        <option>Bài tập ngực</option>
+                        <option>Bài tập lưng</option>
+                    </select>
+                        <br/><span id="btg"></span>
+                    </td>
+                </tr>
+                <tr id="yourname1">
+                    <td>Your name</td>
+                    <td> <input type="text" name="yourname" id="yourname" required maxlength="100" placeholder="Your name is...">
+                        <br/><span id="name"></span>
+                    </td>
+                </tr>
+                <tr class="mg">
+                    <td>Message</td>
+                    <td><input type="text" name="message" id="message2" placeholder="type your text that write on the book" maxlength="30">
+                        <br/><span id="mess"></span>
+                    </td>
+                </tr>
+                <tr class="icl">
+                    <td>Includes</td>
+                    <td> <input type="checkbox" name="Incline" class="include">Thực phẩm bổ sung<br/>
+                        <input type="checkbox" name="Incline" class="include">Bình Lắc<br/>
+                        <input type="checkbox" name="Incline" class="include">Túi bắt chéo<br/></td>
+                </tr>
+                <tr class="dd">
+                    <td>Deliver date</td>
+                    <td> <input type="date" id="deliverdate" name="date" required>
+                        <br/><span id="date"></span>
+                    </td>
+                </tr>
+                <tr class="dt">
+                    <td>Deliver to</td>
+                    <td><textarea name="deliverto" id="deliverto" maxlength="500" placeholder="Address for delivery" required></textarea>
+                        <br/><span id="delivert"></span>
+                    </td>
+                </tr>
+                <tr id="cal">
+                    <td>Call before deliver?</td>
+                    <td> <input type="radio" id="call" name="call">yes
+                        <input type="radio" id="call" name="call">no
+                        <br/><span id="callbd"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" id="button" value="Order now" onclick="order()"></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <hr /> Ⓒ 2022 by Nghia's gym
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
